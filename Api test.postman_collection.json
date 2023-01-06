@@ -1,0 +1,437 @@
+{
+	"info": {
+		"_postman_id": "3c6acc44-7746-4c1d-b3d8-0d93611f6c7a",
+		"name": "Api test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25172154"
+	},
+	"item": [
+		{
+			"name": "User Story & posts",
+			"item": [
+				{
+					"name": "get_all_posts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/posts?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2NzMwMjM3NjUsImV4cCI6MTY3MzAyNzM2NSwibmJmIjoxNjczMDIzNzY1LCJqdGkiOiJ0MTlrRU9vSjhkNndCaFZrIiwic3ViIjoiMSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.A3tK8marc_QZ7xf-D6L89jqBFTtRxvPtjP2R4Y49M_k",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"posts"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2NzMwMjM3NjUsImV4cCI6MTY3MzAyNzM2NSwibmJmIjoxNjczMDIzNzY1LCJqdGkiOiJ0MTlrRU9vSjhkNndCaFZrIiwic3ViIjoiMSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.A3tK8marc_QZ7xf-D6L89jqBFTtRxvPtjP2R4Y49M_k"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get_one_post",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/post/1?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2NzMwMjM3NjUsImV4cCI6MTY3MzAyNzM2NSwibmJmIjoxNjczMDIzNzY1LCJqdGkiOiJ0MTlrRU9vSjhkNndCaFZrIiwic3ViIjoiMSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.A3tK8marc_QZ7xf-D6L89jqBFTtRxvPtjP2R4Y49M_k",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"post",
+								"1"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2NzMwMjM3NjUsImV4cCI6MTY3MzAyNzM2NSwibmJmIjoxNjczMDIzNzY1LCJqdGkiOiJ0MTlrRU9vSjhkNndCaFZrIiwic3ViIjoiMSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.A3tK8marc_QZ7xf-D6L89jqBFTtRxvPtjP2R4Y49M_k"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "store_post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/posts?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2NzMwMjM3NjUsImV4cCI6MTY3MzAyNzM2NSwibmJmIjoxNjczMDIzNzY1LCJqdGkiOiJ0MTlrRU9vSjhkNndCaFZrIiwic3ViIjoiMSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.A3tK8marc_QZ7xf-D6L89jqBFTtRxvPtjP2R4Y49M_k&title=insert title from  postman 223123&body=insert body from  postman 22123123&user_id=1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"posts"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2NzMwMjM3NjUsImV4cCI6MTY3MzAyNzM2NSwibmJmIjoxNjczMDIzNzY1LCJqdGkiOiJ0MTlrRU9vSjhkNndCaFZrIiwic3ViIjoiMSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.A3tK8marc_QZ7xf-D6L89jqBFTtRxvPtjP2R4Y49M_k"
+								},
+								{
+									"key": "title",
+									"value": "insert title from  postman 223123"
+								},
+								{
+									"key": "body",
+									"value": "insert body from  postman 22123123"
+								},
+								{
+									"key": "user_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update_post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/post/12?title=one&body=hello",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"post",
+								"12"
+							],
+							"query": [
+								{
+									"key": "title",
+									"value": "one"
+								},
+								{
+									"key": "body",
+									"value": "hello"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delet_post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/posts/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"posts",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "get_all_prodcuts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/products?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2NzMwMjM3NjUsImV4cCI6MTY3MzAyNzM2NSwibmJmIjoxNjczMDIzNzY1LCJqdGkiOiJ0MTlrRU9vSjhkNndCaFZrIiwic3ViIjoiMSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.A3tK8marc_QZ7xf-D6L89jqBFTtRxvPtjP2R4Y49M_k",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"products"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2NzMwMjM3NjUsImV4cCI6MTY3MzAyNzM2NSwibmJmIjoxNjczMDIzNzY1LCJqdGkiOiJ0MTlrRU9vSjhkNndCaFZrIiwic3ViIjoiMSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.A3tK8marc_QZ7xf-D6L89jqBFTtRxvPtjP2R4Y49M_k"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Orders",
+			"item": [
+				{
+					"name": "make order",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/orders?name=ahmed&email=ahmed@asdas.com&the_order=Artificial Snake Plant&country=egy&city=giza&adress=asdasdasd&phone=1234234&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2NzMwMjM3NjUsImV4cCI6MTY3MzAyNzM2NSwibmJmIjoxNjczMDIzNzY1LCJqdGkiOiJ0MTlrRU9vSjhkNndCaFZrIiwic3ViIjoiMSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.A3tK8marc_QZ7xf-D6L89jqBFTtRxvPtjP2R4Y49M_k",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"orders"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "ahmed"
+								},
+								{
+									"key": "email",
+									"value": "ahmed@asdas.com"
+								},
+								{
+									"key": "the_order",
+									"value": "Artificial Snake Plant"
+								},
+								{
+									"key": "country",
+									"value": "egy"
+								},
+								{
+									"key": "city",
+									"value": "giza"
+								},
+								{
+									"key": "adress",
+									"value": "asdasdasd"
+								},
+								{
+									"key": "phone",
+									"value": "1234234"
+								},
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2NzMwMjM3NjUsImV4cCI6MTY3MzAyNzM2NSwibmJmIjoxNjczMDIzNzY1LCJqdGkiOiJ0MTlrRU9vSjhkNndCaFZrIiwic3ViIjoiMSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.A3tK8marc_QZ7xf-D6L89jqBFTtRxvPtjP2R4Y49M_k"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Nearby Shops",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/Nearbyshops",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"Nearbyshops"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "refresh",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{url}}\t/api/auth/refresh?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2NzMwMjM3NjUsImV4cCI6MTY3MzAyNzM2NSwibmJmIjoxNjczMDIzNzY1LCJqdGkiOiJ0MTlrRU9vSjhkNndCaFZrIiwic3ViIjoiMSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.A3tK8marc_QZ7xf-D6L89jqBFTtRxvPtjP2R4Y49M_k",
+					"host": [
+						"{{url}}\t"
+					],
+					"path": [
+						"api",
+						"auth",
+						"refresh"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2NzMwMjM3NjUsImV4cCI6MTY3MzAyNzM2NSwibmJmIjoxNjczMDIzNzY1LCJqdGkiOiJ0MTlrRU9vSjhkNndCaFZrIiwic3ViIjoiMSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.A3tK8marc_QZ7xf-D6L89jqBFTtRxvPtjP2R4Y49M_k"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/auth/login?email=mohamed@gmail.com&password=123456789",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"auth",
+						"login"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "mohamed@gmail.com"
+						},
+						{
+							"key": "password",
+							"value": "123456789"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/auth/register?name=mohsen&email=mohsen@gmail.com&password=123456789&image=mohamed.png&qualification=beginner&phone=01002694426&adress=6th of october",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"auth",
+						"register"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "mohsen"
+						},
+						{
+							"key": "email",
+							"value": "mohsen@gmail.com"
+						},
+						{
+							"key": "password",
+							"value": "123456789"
+						},
+						{
+							"key": "image",
+							"value": "mohamed.png"
+						},
+						{
+							"key": "qualification",
+							"value": "beginner"
+						},
+						{
+							"key": "phone",
+							"value": "01002694426"
+						},
+						{
+							"key": "adress",
+							"value": "6th of october"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user-profile",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/auth/user-profile?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2NzI5ODc0ODcsImV4cCI6MTY3Mjk5MTA4NywibmJmIjoxNjcyOTg3NDg3LCJqdGkiOiJpVk9saEliMHRwdFhzODduIiwic3ViIjoiMSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.qM32qkf2B-40svIOzRX2aXaJGSjKpSbYeFuIBvbDBS4",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"auth",
+						"user-profile"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2NzI5ODc0ODcsImV4cCI6MTY3Mjk5MTA4NywibmJmIjoxNjcyOTg3NDg3LCJqdGkiOiJpVk9saEliMHRwdFhzODduIiwic3ViIjoiMSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.qM32qkf2B-40svIOzRX2aXaJGSjKpSbYeFuIBvbDBS4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "logout",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/auth/logout?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvcmVmcmVzaCIsImlhdCI6MTY3MjgzODg0MywiZXhwIjoxNjcyODQyNTI3LCJuYmYiOjE2NzI4Mzg5MjcsImp0aSI6Ikkwd2FiRzFUdU9GeVFES3MiLCJzdWIiOiIxIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.g8blixK_wsW34Znjd9rzcOQLzU5RKwX_RGIgvefq6Pk",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"auth",
+						"logout"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvcmVmcmVzaCIsImlhdCI6MTY3MjgzODg0MywiZXhwIjoxNjcyODQyNTI3LCJuYmYiOjE2NzI4Mzg5MjcsImp0aSI6Ikkwd2FiRzFUdU9GeVFES3MiLCJzdWIiOiIxIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.g8blixK_wsW34Znjd9rzcOQLzU5RKwX_RGIgvefq6Pk"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "http://127.0.0.1:8000",
+			"type": "string"
+		}
+	]
+}
